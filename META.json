@@ -1,0 +1,63 @@
+{
+   "abstract" : "Perl bindings to libarchive",
+   "author" : [
+      "Graham Ollis <plicease@cpan.org>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Dist::Zilla version 5.012, CPAN::Meta::Converter version 2.133380",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Archive-Libarchive-Any",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "perl" : "5.008"
+         },
+         "suggests" : {
+            "Archive::Libarchive::FFI" : "0",
+            "Archive::Libarchive::XS" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Alien::Libarchive" : "0",
+            "File::Basename" : "0",
+            "File::Spec" : "0",
+            "File::Temp" : "0",
+            "FindBin" : "0",
+            "Test::More" : "0",
+            "open" : "0",
+            "utf8" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/plicease/archive-libarchive-any/issues"
+      },
+      "homepage" : "http://perl.wdlabs.com/Archive-Libarchive-Any/",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/plicease/archive-libarchive-any.git",
+         "web" : "https://github.com/plicease/archive-libarchive-any"
+      }
+   },
+   "version" : "0.04"
+}
+
