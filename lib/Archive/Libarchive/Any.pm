@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 # ABSTRACT: Perl bindings to libarchive
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 
 do {
@@ -47,7 +47,7 @@ Archive::Libarchive::Any - Perl bindings to libarchive
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
@@ -66,8 +66,8 @@ with reasonable notice in the documentation and Changes file.
 Generally the XS version will be preferred, and the FFI
 version will be used if the XS version is unavailable.
 
-If you set the environment variable ARCHIVE_LIBARCHIVE_ANY
-to XS or FFI it will prefer that implementation over the
+If you set the environment variable C<ARCHIVE_LIBARCHIVE_ANY>
+to C<XS> or C<FFI> it will prefer that implementation over the
 other (this is used both at install and runtime).
 
 =head1 SEE ALSO

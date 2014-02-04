@@ -27,4 +27,4 @@ resources:
   bugtracker: https://github.com/plicease/archive-libarchive-any/issues
   homepage: http://perl.wdlabs.com/Archive-Libarchive-Any/
   repository: git://github.com/plicease/archive-libarchive-any.git
-version: '0.04'
+version: '0.05'
