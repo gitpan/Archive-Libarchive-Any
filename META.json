@@ -29,8 +29,8 @@
             "perl" : "5.008"
          },
          "suggests" : {
-            "Archive::Libarchive::FFI" : "0",
-            "Archive::Libarchive::XS" : "0"
+            "Archive::Libarchive::FFI" : "0.06",
+            "Archive::Libarchive::XS" : "0.06"
          }
       },
       "test" : {
@@ -58,6 +58,6 @@
          "web" : "https://github.com/plicease/archive-libarchive-any"
       }
    },
-   "version" : "0.05"
+   "version" : "0.06"
 }
 

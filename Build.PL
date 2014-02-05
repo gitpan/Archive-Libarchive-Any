@@ -18,7 +18,7 @@ my %module_build_args = (
     "Graham Ollis <plicease\@cpan.org>"
   ],
   "dist_name" => "Archive-Libarchive-Any",
-  "dist_version" => "0.05",
+  "dist_version" => "0.06",
   "license" => "perl",
   "module_name" => "Archive::Libarchive::Any",
   "recommends" => {},
