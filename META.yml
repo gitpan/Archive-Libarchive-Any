@@ -15,7 +15,7 @@ build_requires:
 configure_requires:
   Module::Build: '0.3601'
 dynamic_config: 1
-generated_by: 'Dist::Zilla version 5.012, CPAN::Meta::Converter version 2.133380'
+generated_by: 'Dist::Zilla version 5.013, CPAN::Meta::Converter version 2.133380'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -27,4 +27,4 @@ resources:
   bugtracker: https://github.com/plicease/archive-libarchive-any/issues
   homepage: http://perl.wdlabs.com/Archive-Libarchive-Any/
   repository: git://github.com/plicease/archive-libarchive-any.git
-version: '0.06'
+version: '0.07'

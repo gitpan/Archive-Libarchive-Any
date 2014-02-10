@@ -1,13 +1,13 @@
-package Archive::Libarchive::Any;
+package
+  Archive::Libarchive::Any::_version;
+
+# PODNAME: Archive::Libarchive::Any
+our $VERSION = '0.07'; # VERSION
 
 use strict;
 use warnings;
 
-# ABSTRACT: Perl bindings to libarchive
-our $VERSION = '0.06'; # VERSION
-
-
-do {
+BEGIN {
   my $ok = 0;
   
   my @list = qw( XS FFI );
@@ -18,8 +18,8 @@ do {
   {
     next if $impl eq 'Any';
     my $str = qq{
-      use Archive::Libarchive::$impl ':all';
-      \*import = \\\&Archive::Libarchive::$impl\::import;
+      use Archive::Libarchive::$impl;
+      *Archive::Libarchive::Any:: = *Archive::Libarchive::$impl\::;
     };
     eval $str;
     if($@) {
@@ -32,6 +32,17 @@ do {
   }
   die "could not find an appropriate libarchive implementation" unless $ok;
 };
+
+package Archive::Libarchive::Any;
+
+# ABSTRACT: Perl bindings to libarchive
+
+if(0) {
+
+our $VERSION = '0.07'; # VERSION
+
+}
+
 
 1;
 
@@ -47,7 +58,7 @@ Archive::Libarchive::Any - Perl bindings to libarchive
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 SYNOPSIS
 
@@ -69,6 +80,15 @@ version will be used if the XS version is unavailable.
 If you set the environment variable C<ARCHIVE_LIBARCHIVE_ANY>
 to C<XS> or C<FFI> it will prefer that implementation over the
 other (this is used both at install and runtime).
+
+=head1 SUPPORT
+
+If you find bugs, please open an issue on the project GitHub repository:
+
+L<https://github.com/plicease/Archive-Libarchive-Any/issues?state=open>
+
+If you have a fix, please open a pull request.  You can see the CONTRIBUTING
+file for traps, hints and pitfalls.
 
 =head1 SEE ALSO
 

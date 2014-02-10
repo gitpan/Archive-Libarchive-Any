@@ -4,12 +4,13 @@ use v5.10;
 use Path::Class qw( file dir );
 
 exit if $ENV{TRAVIS_BUILD_ID};
+exit unless $ENV{USER} eq 'ollisg';
 
 do { # import from inc
   foreach my $basename (qw( SeeAlso.pm constants.txt functions.txt ))
   {
-    my $source = file(__FILE__)->parent->parent->parent->file('Archive-Libarchive-XS', 'inc', $basename);
-    my $dest   = file(__FILE__)->parent->file($basename);
+    my $source = file(__FILE__)->parent->parent->parent->parent->file('Archive-Libarchive-XS', 'inc', $basename);
+    my $dest   = file(__FILE__)->parent->parent->file($basename);
     say $source->absolute;
     $dest->spew(scalar $source->slurp);
   }
@@ -17,11 +18,11 @@ do { # import from inc
                       
 do { # import examples from XS version
 
-  my $source = file(__FILE__)->parent->parent->parent->subdir('Archive-Libarchive-XS')->subdir('example');
+  my $source = file(__FILE__)->parent->parent->parent->parent->subdir('Archive-Libarchive-XS')->subdir('example');
   
   die "first checkout Archive::Libarchive::XS" unless -d $source;
   
-  my $dest = file(__FILE__)->parent->parent->subdir('example');
+  my $dest = file(__FILE__)->parent->parent->parent->subdir('example');
   
   foreach my $example ($source->children)
   {
@@ -39,8 +40,8 @@ do { # import examples from XS version
 };
 
 do { # import tests from XS version
-  my $source = file(__FILE__)->parent->parent->parent->subdir('Archive-Libarchive-XS')->subdir('t');
-  my $dest = file(__FILE__)->parent->parent->subdir('t');
+  my $source = file(__FILE__)->parent->parent->parent->parent->subdir('Archive-Libarchive-XS')->subdir('t');
+  my $dest = file(__FILE__)->parent->parent->parent->subdir('t');
   
   foreach my $archive ($source->children)
   {
