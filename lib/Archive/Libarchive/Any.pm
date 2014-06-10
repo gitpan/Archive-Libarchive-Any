@@ -2,7 +2,7 @@ package
   Archive::Libarchive::Any::_version;
 
 # PODNAME: Archive::Libarchive::Any
-our $VERSION = '0.07'; # VERSION
+our $VERSION = '0.0800'; # VERSION
 
 use strict;
 use warnings;
@@ -39,7 +39,7 @@ package Archive::Libarchive::Any;
 
 if(0) {
 
-our $VERSION = '0.07'; # VERSION
+our $VERSION = '0.0800'; # VERSION
 
 }
 
@@ -58,7 +58,7 @@ Archive::Libarchive::Any - Perl bindings to libarchive
 
 =head1 VERSION
 
-version 0.07
+version 0.0800
 
 =head1 SYNOPSIS
 
