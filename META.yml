@@ -3,19 +3,18 @@ abstract: 'Perl bindings to libarchive'
 author:
   - 'Graham Ollis <plicease@cpan.org>'
 build_requires:
-  Alien::Libarchive: '0'
   File::Basename: '0'
   File::Spec: '0'
   File::Temp: '0'
   FindBin: '0'
-  Module::Build: '0.3601'
-  Test::More: '0'
+  Module::Build: '0.28'
+  Test::More: '0.94'
   open: '0'
   utf8: '0'
 configure_requires:
-  Module::Build: '0.3601'
-dynamic_config: 1
-generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170'
+  Module::Build: '0.28'
+dynamic_config: '1'
+generated_by: 'Dist::Zilla version 5.023, CPAN::Meta::Converter version 2.142690'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -27,4 +26,4 @@ resources:
   bugtracker: https://github.com/plicease/Archive-Libarchive-Any/issues
   homepage: http://perl.wdlabs.com/Archive-Libarchive-Any
   repository: git://github.com/plicease/Archive-Libarchive-Any.git
-version: '0.0800'
+version: '0.0801'
